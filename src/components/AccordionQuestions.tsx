@@ -9,12 +9,12 @@ import {
 export function AccordionQuestions() {
   return (
     <section className="w-screen h-screen bg-emerald-300 rounde flex items-center justify-center">
-        <div className="w-5/6 p-5">
+        <div className="w-4/6 p-5">
             <Accordion type="single" collapsible className="w-full">
                 {questions.map((question, index )=> (
                     <AccordionItem value={`item-${index}`} key={question.id}>
-                        <AccordionTrigger className=" text-xl">{question.questions}</AccordionTrigger>
-                        <AccordionContent className="text-lg">{question.answer}</AccordionContent>
+                        <AccordionTrigger className=" text-xl font-semibold">{question.questions}</AccordionTrigger>
+                        <AccordionContent className="text-lg font-medium">{question.answer}</AccordionContent>
                     </AccordionItem>
                 ))}
             </Accordion>
