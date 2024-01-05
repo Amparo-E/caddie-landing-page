@@ -40,7 +40,7 @@ export const NavBar = () => {
         <svg width="34px" height="34px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 6H20M4 12H20M4 18H20" stroke="#000000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path> </g></svg>
         </button>
 
-        <ul className={`font-medium flex md:flex-row items-center md:space-x-8 rtl:space-x-reverse ${isNavOpen ? 'flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 absolute top-20 right-0 w-screen' : 'hidden md:flex md:p-0 md:mt-0 md:border-0 md:bg-white'}`}>
+        <ul className={`font-medium flex md:flex-row items-center md:space-x-8 rtl:space-x-reverse ${isNavOpen ? 'flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 absolute top-10 right-0 w-screen' : 'hidden md:flex md:p-0 md:mt-0 md:border-0 md:bg-white'}`}>
           {links.map(link => (
             <li key={link.name}>
               <a href={link.link}
